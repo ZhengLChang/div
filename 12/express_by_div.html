@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<head></head>
+	<style>
+		body, div, label, fieldset{margin: 0; padding: 0;}
+		#box{
+			width: 600px;
+			height: 900px;
+			margin: 30px auto;
+			background-color: #000;
+		}
+		#express-title{
+			width: 100%;
+			height: 60px;
+			color: #fff;
+			font-size: 2em;
+			text-align: center;
+			padding-top: 20px;
+		}
+		#express-body{
+		}
+		.message-set{
+			width: 96%;
+			color: #fff;
+			margin: 10px auto 0px auto;
+		}
+		.express-content{
+			padding: 10px 20px;
+		}
+		.list1td1{
+			width: 85px;
+			display: inline-block;
+			text-align: right;
+			padding-left: 5px;
+			padding-top: 10px;
+		}
+		.list1td2{
+			margin-left: 3px;
+			margin-top: 10px;
+		}
+		.bigInput{
+			width: 260px;
+		}
+		.littleInput{
+			width: 50px;
+		}
+		.list1td1Little{
+			width: 10px;
+			text-align: left;
+			padding-left: 5px;
+			padding-top: 12px;
+		}
+		.list1td2Little{
+			width: 10px;
+			padding-left: 5px;
+			padding-top: 12px;
+		}
+		.message-set legend{
+			margin-left: 10px;
+		}
+		select{
+			width: 200px;
+			border: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="express-title">
+			<span>Express</span>
+		</div>
+		<div id="express-body">
+		<form action="" method="post">
+<!------------send ------------->
+			<fieldset class="message-set">
+				<legend>Send Message</legend>
+				<div class="express-content">
+					<div>
+						<label class="list1td1" for="senderName">Sender:</label>
+						<input id="senderName" class="list1td2" name="senderName" type="text" maxlength="31"/>
+
+						<label class="list1td1" for="senderAddr">Address:</label>
+						<input id="senderAddr" class="list1td2" name="senderAddr" type="text" maxlength="31"/>
+					<div>
+					<div>
+						<label class="list1td1" for="senderMobil">Mobil:</label>
+						<input id="senderMobil" class="list1td2" name="senderMobil" type="text" maxlength="31"/>
+
+						<label class="list1td1" for="senderPostalCode">Postal:</label>
+						<input id="senderPostalCode" class="list1td2" name="senderPostalCode" type="text" maxlength="31"/>
+					</div>
+				</div>
+			</fieldset>
+<!------------receive------------->
+			<fieldset class="message-set">
+				<legend>Receive Message</legend>
+				<div class="express-content">
+					<div>
+						<label class="list1td1" for="receiveName">Receive:</label>
+						<input id="receiveName" class="list1td2" name="receiveName" type="text" maxlength="31"/>
+
+						<label class="list1td1" for="receiveAddr">Address:</label>
+						<input id="receiveAddr" class="list1td2" name="receiveAddr" type="text" maxlength="31"/>
+					</div>
+					<div>
+						<label class="list1td1" for="receiveMobil">Mobil:</label>
+						<input id="receiveMobil" class="list1td2" name="receiveMobil" type="text" maxlength="31"/>
+
+						<label class="list1td1" for="receivePostalCode">Postal:</label>
+						<input id="receivePostalCode" class="list1td2" type="text" name="receivePostalCode" maxlength="31"/>
+					</div>
+					<div>
+						<label class="list1td1" for="receivePosition"> Position:</label>
+						<select id="receivePosition" class="list1td2" name="receivePosition">
+							<option value="bj">BeiJing</option>
+							<option value="sh">ShangHai</option>
+							<option value="gz">GuangZhou</option>
+							<option value="sz" selected>ShenZhen</option>
+						</select>
+					</div>
+					<div>
+						<label class="list1td1">Wrap:</label>
+						<input type="checkbox" name="paperWrap" value="PW"/>Paper Wrap
+						<input type="checkbox" name="woodWrap" value="WW"/>Wood Wrap
+						<input type="checkbox" name="bagWrap" value="BW" checked/>Bag
+						<input type="checkbox" name="othersWrap" value="Oth"/>Others
+					</div>
+					<div>
+						<label class="list1td1">Pay:</label>
+						<input type="radio" name="Pay" id="cashPay" checked/><label for="cashPay">Cash<label/>
+						<input type="radio" name="Pay" id="aliPay"/><label for="aliPay">Ali Pay</label>
+						<input type="radio" name="Pay" id="unityPay"/><label for="unityPay">Unity Pay</label>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset class="message-set">
+				<legend>Goods Message</legend>
+				<div class="express-content">
+				<div>
+					<label class="list1td1" for="goodsTime">Goods: </label>
+					<input type="text" id="goodsName" name="goodsName" maxlength="127"/>
+				</div>
+				<div>
+					<label class="list1td1Little">Number: </label>
+					<input type="text" class="littleInput" id="goodsNumber" maxlength="7"/>
+
+					<label class="list1td1Little">Weight: </label>
+					<input type="text" class="littleInput" id="goodsWeight" maxlength="7"/>
+
+					<label class="list1td1">Time: </label>
+					<input type="text" id="goodsTime" maxlength="15"/>
+				</div>
+			</fieldset>
+		</form>
+		</div>
+	</div>
+</body>
+</html>

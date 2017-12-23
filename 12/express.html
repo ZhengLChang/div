@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<head></head>
+	<style>
+		body, div, tr, td, fieldset{margin: 0; padding: 0;}
+		#box{
+			width: 600px;
+			height: 900px;
+			margin: 30px auto;
+			background-color: #000;
+		}
+		#express-title{
+			width: 100%;
+			height: 60px;
+			color: #fff;
+			font-size: 2em;
+			text-align: center;
+			padding-top: 20px;
+		}
+		#express-body{
+		}
+		.message-set{
+			width: 96%;
+			color: #fff;
+			margin: 10px auto 0px auto;
+		}
+		.express-content{
+			padding: 10px 20px;
+		}
+		.list1td1{
+			width: 100px;
+			text-align: left;
+			padding-left: 5px;
+			padding-top: 12px;
+		}
+		.list1td2{
+			padding-left: 5px;
+			padding-top: 12px;
+		}
+		.bigInput{
+			width: 260px;
+		}
+		.littleInput{
+			width: 50px;
+		}
+		.list1td1Little{
+			width: 10px;
+			text-align: left;
+			padding-left: 5px;
+			padding-top: 12px;
+		}
+		.list1td2Little{
+			width: 10px;
+			padding-left: 5px;
+			padding-top: 12px;
+		}
+		.message-set legend{
+			margin-left: 10px;
+		}
+		select{
+			width: 200px;
+			border: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="express-title">
+			<span>Express</span>
+		</div>
+		<div id="express-body">
+		<form action="" method="post">
+<!------------send ------------->
+			<fieldset class="message-set">
+				<legend>Send Message</legend>
+				<table class="express-content">
+					<tr>
+						<td class="list1td1">Sender:</td>
+						<td class="list1td2"><input id="senderName" type="text" maxlength=31/></td>
+						<td class="list1td1">Address:</td>
+						<td class="list1td2"><input id="senderAddr" type="text" maxlength=31/></td>
+					</tr>
+					<tr>
+						<td class="list1td1">Mobil:</td>
+						<td class="list1td2"><input id="senderMobil" type="text" maxlength=31/></td>
+						<td class="list1td1">Postal Code:</td>
+						<td class="list1td2"><input id="senderPostalCode" type="text" maxlength=31/></td>
+					</tr>
+				</table>
+			</fieldset>
+<!------------receive------------->
+			<fieldset class="message-set">
+				<legend>Receive Message</legend>
+				<table class="express-content">
+					<tr>
+						<td class="list1td1">Receive:</td>
+						<td class="list1td2"><input id="receiveName" type="text" maxlength=31/></td>
+						<td class="list1td1">Address:</td>
+						<td class="list1td2"><input id="receiveAddr" type="text" maxlength=31/></td>
+					</tr>
+					<tr>
+						<td class="list1td1">Mobil:</td>
+						<td class="list1td2"><input id="receiveMobil" type="text" maxlength=31/></td>
+						<td class="list1td1">Postal Code:</td>
+						<td class="list1td2"><input id="receivePostalCode" type="text" maxlength=31/></td>
+					</tr>
+					<tr>
+						<td class="list1td1"> Position:</td>
+						<td class="list1td2" colspan="3">
+							<select id="receivePosition">
+								<option value="bj">BeiJing</option>
+								<option value="sh">ShangHai</option>
+								<option value="gz">GuangZhou</option>
+								<option value="sz" selected>ShenZhen</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="list1td1">Wrap:</td>
+						<td class="list1td2" colspan="3">
+							<input type="checkbox" name="paperWrap" value="PW"/>Paper Wrap
+							<input type="checkbox" name="woodWrap" value="WW"/>Wood Wrap
+							<input type="checkbox" name="bagWrap" value="BW" checked/>Bag
+							<input type="checkbox" name="othersWrap" value="Oth"/>Others
+						</td>
+					</tr>
+					<tr>
+						<td class="list1td1">Pay:</td>
+						<td class="list1td2" colspan="3">
+							<input type="radio" name="cashPay" id="cashPay" checked/><label for="cashPay">Cash<label/>
+							<input type="radio" name="aliPay" id="aliPay"/><label for="aliPay">Ali Pay</label>
+							<input type="radio" name="unityPay" id="unityPay"/><label for="unityPay">Unity Pay</label>
+						<td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset class="message-set">
+				<legend>Goods Message</legend>
+				<table class="express-content">
+				<tr>
+					<td class="list1td1">Goods: </td>
+					<td class="list1td2">
+						<input type="text" id="goodsName" maxlength="127"/>
+					</td>
+				</tr>
+				<tr colspan="4">
+					<td class="list1td1Little">Number: </td>
+					<td class="list1td2Little">
+						<input type="text" class="littleInput" id="goodsNumber" maxlength="7"/>
+					</td>
+					<td class="list1td1Little">Weight: </td>
+					<td class="list1td2Little">
+						<input type="text" class="littleInput" id="goodsWeight" maxlength="7"/>
+					</td>
+					<td class="list1td1">Time: </td>
+					<td class="list1td2">
+						<input type="text" id="goodsTime" maxlength="15"/>
+					</td>
+				</tr>
+
+				</table>
+			</fieldset>
+		</form>
+		</div>
+	</div>
+</body>
+</html>
