@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<head></head>
+	<style>
+		body, div{margin: 0; padding: 0;}
+		body{
+			background: url(3.jpg) no-repeat;
+			background-size: cover;
+		}
+		#box{
+			width: 980px;
+			height: 600px; 
+				/*
+			border: 1px solid red;
+			*/
+			margin: 15px auto;
+
+		}
+		#navigation{
+			float: left;
+			width: 150px;
+			height: 280px; 
+			/*
+			border: 1px solid blue;
+			*/
+		}
+		#Content{
+			float: left;
+			position: relative;
+			width: 800px; 
+			height: 600px;
+			margin-left: 26px;
+			border: 1px solid #f5f5f5;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px 2px;
+		}
+		.subnav{
+			width: 100%;
+			height: 65px;
+			background-color: red;
+			border: 1px solid #fff;
+		}
+		.subnav + .subnav{
+			margin-top: 3px;
+		}
+		.subnav a{
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+		}
+		.subContent{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
+		#tmall{
+			background: #fff url(https://img.alicdn.com/tfs/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png) no-repeat;
+			background-size: contain;
+			overflow: hidden;
+		}
+		#baidu{
+			background: #fff url(https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png) no-repeat;
+			background-size: contain;
+			overflow: hidden;
+		}
+		#jd{
+			background: #fff url(https://misc.360buyimg.com/lib/img/e/logo-201305-b.png) no-repeat;
+			background-size: contain;
+			overflow: hidden;
+		}
+		#sina{
+			background: #fff url(http://i1.sinaimg.cn/dy/deco/2013/0329/logo/LOGO_1x.png) no-repeat;
+			background-size: contain;
+			overflow: hidden;
+		}
+/*
+		#displayTmall{
+			visibility: visible;
+		}
+		#displayBaidu{
+			visibility: hidden;
+		}
+		#displayJd{
+			visibility: hidden;
+		}
+		#displaySina{
+			visibility: hidden;
+		}
+
+		#tmall:hover #displayTmall{
+			background-color: #000;
+		}
+*/
+
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="navigation">
+			<div class="subnav" id="tmall"><a href="http://www.tmall.com" target="displayContent"></a>
+			</div>
+			<div class="subnav" id="baidu"><a href="http://www.baidu.com" target="displayContent"></a>
+			</div>
+			<div class="subnav" id="jd"><a href="http://www.jd.com" target="displayContent"></a>
+			</div>
+			<div class="subnav" id="sina"><a href="http://www.sina.com.cn" target="displayContent"></a>
+			</div>
+		</div>
+		<div id="Content">
+			<iframe src="http://www.tmall.com" frameborder="0" name="displayContent" class="subContent" scrolling="no"></iframe>
+		</div>
+	</div>
+</body>
+</html>
