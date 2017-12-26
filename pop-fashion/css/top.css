@@ -17,23 +17,23 @@
 	margin-left: 30px;
 }
 
-#top_header_left > li{
+.top_h_l_li{
 	position: relative;
 	height: 40px;
 	float: left;
 	padding: 0 10px;
+	line-height: 40px;
 	margin-right: 10px;
 }
-#top_header_left > li > a{
+.top_h_l_li  a{
 	height: 40px;
-	line-height: 40px;
 	cursor: point;
 }
-#top_header_left > li > a > img{
+.top_h_l_li  a  img{
 	color: #fff;
 	vertical-align: middle;
 }
-#top_header_left > li > a >  i{
+.top_h_l_li  a   i{
 	background: url(../images/vi_icon.png) no-repeat;
 	display: inline-block;
 	width: 6px;
@@ -41,6 +41,10 @@
 	margin-left: 10px;
 	vertical-align: middle;
 }
+
+
+
+
 #top_fashion_list{
 	width: 100%;
 	position: absolute;
@@ -48,6 +52,10 @@
 	top: 40px;
 	background: #12181e;
 	padding: 10px 0;
+	display: none;
+}
+#left_offical_logo:hover #top_fashion_list{
+	display: inline-block;
 }
 #top_fashion_list li a{
 	height: 30px;
@@ -64,15 +72,43 @@
 	height: 12px;
 	display: inline-block;
 	margin-left: 5px;
-	vertical-align: middle;
+	margin-right: 5px;
 }
-.top_fashion_all_link_for_fashion{
+.top_fashion_all_link_for_cloth{
 	background-position: -58px -417px;
 	width: 13px;
 	height: 14px;
 }
-
-
+.top_fashion_all_link_for_bag{
+	background-position: -58px -417px;
+	width: 13px;
+	height: 14px;
+}
+.top_fashion_all_link_for_showes{
+	background-position: -58px -417px;
+	width: 13px;
+	height: 14px;
+}
+.top_fashion_all_link_for_jewelry{
+	background-position: -58px -417px;
+	width: 13px;
+	height: 14px;
+}
+.top_fashion_all_link_for_home{
+	background-position: -58px -417px;
+	width: 13px;
+	height: 14px;
+}
+.top_fashion_all_link_for_offical_website{
+	background-position: -58px -417px;
+	width: 13px;
+	height: 14px;
+}
+.top_fashion_all_link_for_future{
+	background-position: -58px -417px;
+	width: 13px;
+	height: 14px;
+}
 
 
 
