@@ -21,19 +21,32 @@
 	position: relative;
 	height: 40px;
 	float: left;
-	padding: 0 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	line-height: 40px;
 	margin-right: 10px;
 }
 .top_h_l_li  a{
 	height: 40px;
-	cursor: point;
+	cursor: pointer;
+	color: #fff;
+}
+
+.top_h_l_li  a > em{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../images/vi_icon.png) no-repeat;
+	vertical-align: middle;
+	padding: 0px;
+	margin-top: -2px;
+	margin-right: 5px;
 }
 .top_h_l_li  a  img{
 	color: #fff;
 	vertical-align: middle;
 }
-.top_h_l_li  a   i{
+.top_h_l_li a   i{
 	background: url(../images/vi_icon.png) no-repeat;
 	display: inline-block;
 	width: 6px;
@@ -45,7 +58,7 @@
 
 
 
-#top_fashion_list{
+.top_list{
 	width: 100%;
 	position: absolute;
 	left: 0;
@@ -54,10 +67,10 @@
 	padding: 10px 0;
 	display: none;
 }
-#left_offical_logo:hover #top_fashion_list{
+#left_offical_logo:hover .top_list{
 	display: inline-block;
 }
-#top_fashion_list li a{
+.top_list li a{
 	height: 30px;
 	padding-left: 10px;
 	line-height: 30px;
@@ -66,49 +79,130 @@
 	display: block;	
 }
 
-.top_fashion_all_link{
-	background: url(../images/icons.png) no-repeat;
-	width: 12px;
-	height: 12px;
+ul li a i.top_fashion_all_link_for_cloth{
 	display: inline-block;
+	background: url(../images/icons.png) no-repeat;
+	background-position: -58px -417px;
 	margin-left: 5px;
 	margin-right: 5px;
-}
-.top_fashion_all_link_for_cloth{
-	background-position: -58px -417px;
 	width: 13px;
+	margin-top: -2px;
 	height: 14px;
 }
-.top_fashion_all_link_for_bag{
+ul li a i.top_fashion_all_link_for_bag{
+	display: inline-block;
+	background: url(../images/icons.png) no-repeat;
 	background-position: -58px -417px;
+	margin-left: 5px;
+	margin-right: 5px;
 	width: 13px;
+	margin-top: -2px;
 	height: 14px;
 }
-.top_fashion_all_link_for_showes{
+ul li a i.top_fashion_all_link_for_showes{
+	display: inline-block;
+	background: url(../images/icons.png) no-repeat;
 	background-position: -58px -417px;
+	margin-left: 5px;
+	margin-right: 5px;
 	width: 13px;
+	margin-top: -2px;
 	height: 14px;
 }
-.top_fashion_all_link_for_jewelry{
+ul li a i.top_fashion_all_link_for_jewelry{
+	display: inline-block;
+	background: url(../images/icons.png) no-repeat;
 	background-position: -58px -417px;
+	margin-left: 5px;
+	margin-right: 5px;
 	width: 13px;
+	margin-top: -2px;
 	height: 14px;
 }
-.top_fashion_all_link_for_home{
+ul li a i.top_fashion_all_link_for_home{
+	display: inline-block;
+	background: url(../images/icons.png) no-repeat;
 	background-position: -58px -417px;
+	margin-left: 5px;
+	margin-right: 5px;
 	width: 13px;
+	margin-top: -2px;
 	height: 14px;
 }
-.top_fashion_all_link_for_offical_website{
+ul li a i.top_fashion_all_link_for_offical_website{
+	display: inline-block;
+	background: url(../images/icons.png) no-repeat;
 	background-position: -58px -417px;
+	margin-left: 5px;
+	margin-right: 5px;
 	width: 13px;
+	margin-top: -2px;
 	height: 14px;
 }
-.top_fashion_all_link_for_future{
+ul li a i.top_fashion_all_link_for_future{
+	display: inline-block;
+	background: url(../images/icons.png) no-repeat;
 	background-position: -58px -417px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: -2px;
 	width: 13px;
 	height: 14px;
 }
 
+/***lang**/
+ul li a i.lang_korea{
+	display: inline-block;
+	background: url(../images/vi_icon.png) no-repeat;
+	background-position: -36px -0px;
+	margin-top: -2px;
+	margin-right: 7px;
+	width: 16px;
+	height: 16px;
+	vertical-align: center;
+}
 
+ul li a i.lang_en{
+	display: inline-block;
+	background: url(../images/vi_icon.png) no-repeat;
+	background-position: -59px -0px;
+	margin-top: -2px;
+	margin-right: 7px;
+	width: 14px;
+	height: 11px;
+	vertical-align: center;
+}
 
+ul li a em.web_desc{
+	/*
+	display: inline-block;
+	*/
+	width: 12px;
+	height: 12px;
+	/*
+	background: url(../images/vi_icon.png) no-repeat;
+	*/
+	background-position: -81px 0;
+	/*
+	vertical-align: middle;
+	padding: 0px;
+	margin-top: -2px;
+	*/
+}
+
+ul li a em.custom_exe{
+	/*
+	display: inline-block;
+	*/
+	width: 13px;
+	height: 12px;
+	/*
+	background: url(../images/vi_icon.png) no-repeat;
+	*/
+	background-position: -101px 0;
+	/*
+	vertical-align: middle;
+	padding: 0px;
+	margin-top: -2px;
+	*/
+}

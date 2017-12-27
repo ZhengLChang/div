@@ -26,18 +26,18 @@ a, a:link{
 	/*
 	margin-top: 14px;
 	*/
+	margin-right: 0px;
 	background: #61656b;
 }
 .clear_float{
 	clear: both;
 }
-.ch-lang{
+ul li a em.ch-lang{
 	width: 18px;
 	height: 12px;
 	background: url(../images/vi_icon.png) no-repeat;
 	display: inline-block;
 	background-position: -11px 0;
-	margin-right: 10px;
 	vertical-align: middle;
 	padding: 0px;
 }
