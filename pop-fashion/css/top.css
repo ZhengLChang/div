@@ -14,6 +14,7 @@
 }
 
 #top_header_left{
+	display: inline-block;
 	margin-left: 30px;
 }
 
@@ -67,8 +68,12 @@
 	padding: 10px 0;
 	display: none;
 }
-#left_offical_logo:hover .top_list{
+#left_offical_logo:hover .top_list,#left_lang:hover .top_list{
 	display: inline-block;
+}
+#left_lang a:hover, .top_list a:hover, .top_h_l_li a:hover{
+	color: #efed83;
+	opacity: 0.8;
 }
 .top_list li a{
 	height: 30px;
@@ -205,4 +210,21 @@ ul li a em.custom_exe{
 	padding: 0px;
 	margin-top: -2px;
 	*/
+}
+
+
+/********top right**********/
+#top_header_right{
+	display: inline-block;
+	float: right;
+	background: red;
+}
+.top_r_li{
+	position: relative;
+	float: right;
+	height: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 40px;
+	margin-right: 10px;
 }
