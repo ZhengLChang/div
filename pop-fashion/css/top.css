@@ -72,8 +72,8 @@
 	display: inline-block;
 }
 #left_lang a:hover, .top_list a:hover, .top_h_l_li a:hover{
-	color: #efed83;
-	opacity: 0.8;
+	color: rgb(187, 147, 68);
+	opacity: 0.6;
 }
 .top_list li a{
 	height: 30px;
@@ -254,7 +254,94 @@ ul li a em.custom_exe{
 	margin-top: -2px;
 }
 
+.top_search input{
+	background: #1c232b;
+	width: 100%;
+	height: 20px;
+	border: 0 none;
+	border-bottom: 1px solid #878a8d;
+	background: none;
+	color: #fff;
+}
+.top_search input::placeholder{
+	color: #fff;
+	opacity: 1;
+}
+.top_search input::-moz-placeholder{
+	color: #fff;
+	opacity: 1;
+}
 
+.top_search input::-webkit-placeholder{
+	color: #fff;
+	opacity: 1;
+}
 
+.top_search em{
+	position: absolute;
+	display: inline-block;
+	background: #1c232b url(../images/vi_icon.png) no-repeat 10px -22px;
+	width: 27px;
+	height: 16px;
+	right: 0px;
+	top: 12px;
+	cursor: pointer;
+}
+.find_us a em{
+	display: inline-block;
+	background: url(../images/vi_icon.png) no-repeat -124px 0;
+	width: 16px;
+	height: 18px;
+}
+ul li.find_us div.top_list{
+	position: absolute;
+	float: right;
+	top: 40px;
+	left: auto;
+	right: 0;
+	background: #13181e;
+	width: 204px;
+	line-height: 35px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.find_us:hover .top_list{
+	display: inline-block;
+}
+.find_us_by_qq{
+	width: 186px;
+	height: 36px;
+	background: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	line-height: 36px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 15px;
+}
+.find_us_by_qq a{
+	display: block;
+	color: #ab7b10;
+	margin-left: 10px;
+}
+.find_us_by_qq a em{
+	display: inline-block;
+	background: url(../images/vi_icon.png) -38px -168px;
+	width: 17px;
+	height: 17px;
+	margin-right: 5px;
+	font-size: 14px;
+	vertical-align: middle;
+}
+.find_us_by_qq:hover{
+	background-color: #ab7b10;
+}
 
+.find_us_by_qq:hover a{
+	color: #000;
+}
+
+.find_us_by_qq:hover a em{
+	background: url(../images/vi_icon.png) -63px -168px;
+}
 
