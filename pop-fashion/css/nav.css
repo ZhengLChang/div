@@ -1,0 +1,48 @@
+@charset utf-8;
+#top_nav{
+	height: 76px;
+	width: 100%;
+	background: #fff;
+	margin-top: 40px;
+	box-shadow: 0px 0px 10px 0px #d9d9d9;
+	min-width: 1200px;
+}
+
+.top_nav_li{
+	position: relative;
+	height: 76px;
+	padding: 0 10px;
+	line-height: 76px;
+	margin-right: 10px;
+	font-size: 100%;
+	float: left;
+}
+
+.top_nav_li  em{
+	background: url(../images/vi_icon.png) no-repeat 0 -146px;
+	display: inline-block;
+	width: 17px;
+	height: 16px;
+	margin-right: 5px;
+	margin-top: -2px;
+	vertical-align: middle;
+}
+.top_nav_li  a span{
+	font-size: 15px;
+}
+.top_nav_li  .switch{
+	background: url(../images/vi_icon.png) no-repeat 0 -146px;
+	width: 17px;
+	height: 16px;
+}
+
+.top_nav_li  .pop_particular{
+	background: url(../images/vi_icon.png) no-repeat -23px -146px;
+}
+.top_nav_li  .r_d{
+	background: url(../images/vi_icon.png) no-repeat -47px -146px;
+}
+.top_nav_li  .design_tool{
+	background: url(../images/vi_icon.png) no-repeat -69px -146px;
+}
+

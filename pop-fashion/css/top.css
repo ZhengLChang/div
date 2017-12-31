@@ -2,7 +2,7 @@
 
 #new_header{
 	position: relative;
-	height: 80px;
+	height: 76px;
 	z-index: 99;
 }
 #top_header{
@@ -30,6 +30,7 @@
 	line-height: 0;
 }
 .top_h_l_li{
+	position: relative;
 	height: 40px;
 	float: left;
 	padding-left: 10px;
@@ -232,12 +233,11 @@ ul li a em.custom_exe{
 }
 .top_r_li{
 	position: relative;
-	float: left;
 	height: 40px;
 	padding: 0 10px;
 	line-height: 40px;
 	margin-right: 10px;
-	z-index: 1000;
+	z-index: 9000;
 	float: right;
 }
 .top_more{
@@ -356,4 +356,5 @@ ul li.find_us div.top_list{
 .find_us_by_qq:hover a em{
 	background: url(../images/vi_icon.png) -63px -168px;
 }
+
 
