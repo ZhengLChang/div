@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<style>
+		body, div, ul, li{
+			margin: 0;padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		#box{
+			position: relative;
+			width: 790px;
+			height: 400px;
+			/*
+			border: 1px solid blue;
+			*/
+			margin: 50px auto;
+			overflow: hidden;
+		}
+		#pic{
+			width: 100%;
+			height: 340px;
+		}
+		#button{
+			width: 300px;
+			height: 40px;
+			margin: 10px auto;
+		}
+		ul#button li{
+			display: inline-block;
+		}
+		#box input{
+			position: absolute;
+			top: -11111px;
+		}
+		ul#button  li input:checked + label{
+			background-color: red;
+		}
+
+		#pic{
+			background: url(images/1.jpg);
+		}
+
+		#button1:checked ~ #pic{
+			background: url(images/1.jpg);
+		}
+		#button2:checked ~ #pic{
+			background: url(images/2.jpg);
+		}
+		#button3:checked ~ #pic{
+			background: url(images/3.jpg);
+		}
+		#button4:checked ~ #pic{
+			background: url(images/4.jpg);
+		}
+		#button5:checked ~ #pic{
+			background: url(images/5.jpg);
+		}
+
+
+		#button1:checked ~ ul li:nth-child(1) label{
+			background-color: red;
+		}
+		#button2:checked ~ ul li:nth-child(2) label{
+			background-color: red;
+		}
+		#button3:checked ~ ul li:nth-child(3) label{
+			background-color: red;
+		}
+		#button4:checked ~ ul li:nth-child(4) label{
+			background-color: red;
+		}
+		#button5:checked ~ ul li:nth-child(5) label{
+			background-color: red;
+		}
+		ul#button li label{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 20px;
+			border: 1px solid pink;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<input type="radio" id="button1" name="button"/ checked>
+		<input type="radio" id="button2" name="button"/>
+		<input type="radio" id="button3" name="button"/>
+		<input type="radio" id="button4" name="button"/>
+		<input type="radio" id="button5" name="button"/>
+		<div id="pic">
+		</div>
+		<ul id="button">
+			<li><label for="button1">1</label></li>
+			<li><label for="button2">2</label></li>
+			<li><label for="button3">3</label></li>
+			<li><label for="button4">4</label></li>
+			<li><label for="button5">5</label></li>
+		</ul>
+	</div>
+</body>
+</html>
